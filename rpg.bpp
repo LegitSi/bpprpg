@@ -1,0 +1,20 @@
+[# \"unless B* gets cancelled, rpg will be my final B++ newtag tag\" -LegitSi, 2022]
+[# \"let's do it together\" -bill wurtz, 2017]
+[DEFINE extraneous ""]
+[DEFINE pUSERID [USERID]]
+[IF [COMPARE [LENGTH [VAR pUSERID]] = 18] [DEFINE extraneous "X"] ""] 
+[IF [COMPARE [LENGTH [VAR pUSERID]] = 17] [DEFINE extraneous "XX"] ""] 
+[IF [COMPARE [LENGTH [VAR pUSERID]] = 16] [DEFINE extraneous "XXX"] ""]
+[# after this point you had to have joined discord in impossible circumstances]
+[DEFINE aUSERID [CONCAT [VAR [pUSERID] [VAR extraneous]]]]
+[DEFINE enemyHP [GLOBAL VAR rpgEnemyHealth]]
+[DEFINE totalEnemyHP [GLOBAL VAR rpgEnemyTotalHP]]
+[DEFINE rarity [MATH 1 / [RANDOM 0 1]]]
+[DEFINE anger [MATH 1 / [RANDOM 0 1]]]
+[DEFINE defense [MATH 1 / [RANDOM 0 1]]]
+
+[# There will be three kinds of rarities: Rarities (guess where I got these from!), Anger, and Defense.]
+[# Rarity is Basic, Common, Uncommon, Rare, Epic, Legendary, Mythical, Divine, Ultimate, Supreme, Immortal. 0-10. more health, more coins.]
+[# Anger is Neutral, Miffed, Annoyed, Frustrated, Offended, Angry, Hostile, Aggressive, Furious, Outraged, Infuriated. 0-10. more health, less defense.]
+[# Defense is Defenseless, Aware, Guarded, Secure, Fortified, 
+[IF [COMPARE [GLOBAL VAR rpgEnemyDead] = 1] [CONCAT [
