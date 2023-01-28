@@ -16,5 +16,6 @@
 [# There will be three kinds of rarities: Rarities (guess where I got these from!), Anger, and Defense.]
 [# Rarity is Basic, Common, Uncommon, Rare, Epic, Legendary, Mythical, Divine, Ultimate, Supreme, Immortal. 0-10. more health, more coins.]
 [# Anger is Neutral, Miffed, Annoyed, Frustrated, Offended, Angry, Hostile, Aggressive, Furious, Outraged, Infuriated. 0-10. more health, less defense.]
-[# Defense is Defenseless, Aware, Guarded, Secure, Fortified, 
+[# Defense is Defenseless, Aware, Guarded, Secure, Fortified]
+[# do we really want to do this though? would probably be better if we just generated names based on stats and not stats based on hp - infernity 1/28/23]
 [IF [COMPARE [GLOBAL VAR rpgEnemyDead] = 1] [CONCAT [
