@@ -6,7 +6,7 @@
 [IF [COMPARE [LENGTH [VAR pUSERID]] = 17] [DEFINE extraneous "XX"] ""] 
 [IF [COMPARE [LENGTH [VAR pUSERID]] = 16] [DEFINE extraneous "XXX"] ""]
 [# after this point you had to have joined discord in impossible circumstances]
-[DEFINE aUSERID [CONCAT [VAR [pUSERID] [VAR extraneous]]]]
+[DEFINE aUSERID [CONCAT [VAR pUSERID] [VAR extraneous]]]
 [DEFINE enemyHP [GLOBAL VAR rpgEnemyHealth]]
 [DEFINE totalEnemyHP [GLOBAL VAR rpgEnemyTotalHP]]
 [DEFINE rarity [MATH 1 / [RANDOM 0 1]]]
