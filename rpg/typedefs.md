@@ -1,3 +1,3 @@
 # Pseudo-type definitions
 ## Enemy:
-[name, [hp, def, atk]]  
+[(type id) 0, name, [hp, def, atk], id (timestamp of creation)] 
